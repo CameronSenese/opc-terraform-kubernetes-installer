@@ -1,0 +1,180 @@
+[ol7_latest]
+name=Oracle Linux $releasever Latest ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/latest/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=1
+
+[ol7_u0_base]
+name=Oracle Linux $releasever GA installation media copy ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/0/base/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_u1_base]
+name=Oracle Linux $releasever Update 1 installation media copy ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/1/base/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_u2_base]
+name=Oracle Linux $releasever Update 2 installation media copy ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/2/base/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_u3_base]
+name=Oracle Linux $releasever Update 3 installation media copy ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/3/base/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+
+[ol7_UEKR4]
+name=Latest Unbreakable Enterprise Kernel Release 4 for Oracle Linux $releasever ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=1
+
+[ol7_UEKR3]
+name=Latest Unbreakable Enterprise Kernel Release 3 for Oracle Linux $releasever ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/UEKR3/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_optional_latest]
+name=Oracle Linux $releasever Optional Latest ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/optional/latest/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_addons]
+name=Oracle Linux $releasever Add ons ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/addons/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=1
+
+[ol7_UEKR3_OFED20]
+name=OFED supporting tool packages for Unbreakable Enterprise Kernel on Oracle Linux 7 ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/UEKR3_OFED20/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+priority=20
+
+[ol7_UEKR4_OFED]
+name=OFED supporting tool packages for Unbreakable Enterprise Kernel Release 4 on Oracle Linux 7 ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/UEKR4/OFED/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+priority=20
+
+[ol7_MySQL57]
+name=MySQL 5.7 for Oracle Linux 7 ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/MySQL57_community/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_MySQL56]
+name=MySQL 5.6 for Oracle Linux 7 ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/MySQL56/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_MySQL55]
+name=MySQL 5.5 for Oracle Linux 7 ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/MySQL55/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_openstack21]
+name=OpenStack 2.1 packages for Oracle Linux 7 (x86_64)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/openstack21/x86_64/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+priority=20
+enabled=0
+
+[ol7_openstack20]
+name=OpenStack 2.0 packages for Oracle Linux 7 (x86_64)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/openstack20/x86_64/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+priority=20
+
+[ol7_openstack20]
+name=OpenStack 2.0 packages for Oracle Linux 7 (x86_64)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/openstack20/x86_64/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+priority=20
+enabled=0
+
+[ol7_ceph]
+name=Ceph Storage for Oracle Linux Release 2.0 - Oracle Linux 7.2 or later ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/ceph/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_ceph10]
+name=Ceph Storage for Oracle Linux Release 1.0 - Oracle Linux 7.1 or later ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/ceph10/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_spacewalk22_client]
+name=Spacewalk Client 2.2 for Oracle Linux 7 ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/spacewalk22/client/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_software_collections]
+name=Software Collection Library release 2.3 packages for Oracle Linux 7 (x86_64)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/SoftwareCollections/x86_64/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_spacewalk24_server]
+name=Spacewalk Server 2.4 for Oracle Linux 4 ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/spacewalk24/server/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_spacewalk24_client]
+name=Spacewalk Client 2.4 for Oracle Linux 4 ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/spacewalk24/client/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=0
+
+[ol7_MODRHCK]
+name=Latest RHCK with fixes from Oracle for Oracle Linux $releasever ($basearch)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/MODRHCK/$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+priority=20
+enabled=0
+
+[ol7_preview]
+name=Preview packages for test and development - Oracle Linux 7 (x86_64)
+baseurl=http://yum.oracle.com/repo/OracleLinux/OL7/preview/x86_64
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=1

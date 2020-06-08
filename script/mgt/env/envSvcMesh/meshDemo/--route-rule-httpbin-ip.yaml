@@ -1,0 +1,19 @@
+apiVersion: config.istio.io/v1alpha2
+kind: RouteRule
+metadata:
+  name: httpbin-ip
+  namespace: default
+spec:
+  destination:
+    name: httpbin
+  match:
+    request:
+      headers:
+        uri:
+          prefix: /httpbin/ip
+  rewrite:
+    uri: /ip
+  route:
+  - labels:
+      version: v1
+  precedence: 1

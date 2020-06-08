@@ -1,0 +1,43 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: istio-analytics
+  namespace: istio-system
+  labels:
+    app: istio-analytics
+  annotations:
+    sidecar.istio.io/inject: "false"
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: istio-analytics
+    spec:
+      containers:
+      - name: istio-analytics
+        image: docker.io/linsun/istio-analytics:latest
+        env:
+          - name: POD_NAMESPACE
+            valueFrom:
+              fieldRef:
+                apiVersion: v1
+                fieldPath: metadata.namespace
+          - name: ISTIO_ANALYTICS_ZIPKIN_HOST
+            value: "http://10.109.130.198:9411"
+        ports:
+        - containerPort: 5555
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: istio-analytics
+  namespace: istio-system
+spec:
+  ports:
+  - name: http
+    port: 5555
+  selector:
+    app: istio-analytics
+---

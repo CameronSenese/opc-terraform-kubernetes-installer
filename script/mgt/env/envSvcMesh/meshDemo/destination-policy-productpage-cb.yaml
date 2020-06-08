@@ -1,0 +1,20 @@
+apiVersion: config.istio.io/v1alpha2
+kind: DestinationPolicy
+metadata:
+  name: productpage-cb
+  namespace: default
+spec:
+  destination:
+    name: productpage
+    labels:
+      version: v1
+  circuitBreaker:
+    simpleCb:
+      maxConnections: 1
+      httpMaxRequests: 1
+      httpMaxPendingRequests: 1
+      httpMaxRequestsPerConnection: 1
+      sleepWindow: 5m
+      httpDetectionInterval: 1s
+      httpConsecutiveErrors: 1
+      httpMaxEjectionPercent: 100
